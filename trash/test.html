@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <style>
+        /* drawer menu */
+        
+        .drawer-menu {
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            padding: 120px 0;
+            background: rgb(255, 244, 244);
+            opacity: 0;
+        }
+        /* checkbox */
+        
+        .menu-btn {
+            position: fixed;
+            display: block;
+            top: 40px;
+            right: 40px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 10px;
+            text-align: center;
+            cursor: pointer;
+            z-index: 3;
+        }
+        
+        .check:checked~.drawer-menu {
+            opacity: 1;
+        }
+        
+        .check:checked~.menu-btn .menu-btn__text {
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        .check:checked~.close-menu {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" class="check" id="checked">
+    <label class="menu-btn" for="checked">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+
+    </label>
+    <label class="close-menu" for="checked"></label>
+    <nav class="drawer-menu">
+        <ul>
+            <li><a href="#">Side Menu Name</a></li>
+            <li><a href="#">Side Menu Name</a></li>
+            <li><a href="#">Side Menu Name</a></li>
+            <li><a href="#">Side Menu Name</a></li>
+            <li><a href="#">Side Menu Name</a></li>
+        </ul>
+</body>
+
+</html>

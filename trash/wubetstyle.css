@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+p {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+
+/* h1 {
+  margin-top: 70px;
+} */
+
+p {
+    margin-bottom: 35px;
+}
+
+.im1 {
+    border: solid white 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* box-shadow: 0px 0px 18px 0px; */
+}
+
+.wrapper {
+    padding: 0 20% 0;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    width: 61%;
+    padding: 0px 18% 0;
+}
+
+.comment input {
+    margin: 1vh;
+    height: 60px;
+    outline: none;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 0 17px;
+    border: 1px solid #999;
+    background-color: white;
+}
+
+.comment button {
+    width: 100%;
+    /* opacity: 0.7; */
+    height: 56px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    background: purple;
+    margin-bottom: 27px;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    opacity: 0.7;
+}
+
+.navbar {
+    position: fixed;
+    top: 2px;
+    width: 65%;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 301px;
+    margin-top: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.navbar a {
+    float: right;
+    padding: 14px 30px 14px 15px;
+    text-decoration: none;
+    display: block;
+    transition: 2sec;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar a:hover {
+    color: purple;
+}
+
+.home,
+.about,
+.passion,
+.comment,
+.project {
+    margin-bottom: 0px;
+    margin-top: px;
+}
+
+.about {
+    background-image: url(images/low-poly-grid-haikei.png);
+}
+
+.im0 {
+    height: 120px;
+    width: 120px;
+}
+
+
+/* ==========================NEW NAVBAR===================== */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/baground.png);
+    background-size: cover;
+    background-position: center;
+}
